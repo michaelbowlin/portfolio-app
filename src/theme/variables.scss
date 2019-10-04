@@ -74,4 +74,35 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  // TODO: Move Me!
+  body {
+    margin: 0;
+    padding: 0;
+
+    p {
+      line-height: 1.5em;
+    }
+
+    ion-card {
+      border-radius: 2em;
+      padding: 1em;
+    }
+
+    hr {
+      margin-top: 5em;
+      background: var(--ion-color-medium-tint);
+    }
+
+    .dropcap {
+      position: relative;
+      .first {
+        position: absolute;
+        left: -0.65em;
+        top: -0.07em;
+        font-size: 1.22em;
+        line-height: 1em;
+      }
+    }
+  }
 }
