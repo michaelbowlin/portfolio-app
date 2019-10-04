@@ -1,62 +1,9 @@
-ion-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  min-width: 1366px;
-
-  .mb-logo {
-    margin: 0.5em 0 0 0;
-
-    img {
-      &.logo {
-        margin-top: 0.3em;
-      }
-    }
-
-    h2 {
-      margin: 0.2em 0 0 0;
-      font-size: 2.1em;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-
-      span {
-        color: var(--ion-color-light-shade);
-      }
-    }
-  }
-
-  ion-tab-bar {
-    --background: none;
-    --border: none;
-    --color: none;
-
-    padding: 1.5em 0;
-
-    ion-label {
-      font-size: 1.6em;
-      font-weight: 700;
-    }
-
-    ion-icon {
-      font-size: 18px;
-    }
-
-    .job-title {
-      color: var(--ion-color-light);
-    }
-  }
-
-  @media only screen and (min-width: 1366px) {
-  }
-}
-
 .L {
   &-wrapper {
     min-width: 1366px;
 
     .intro {
-      padding: 5.6em 1em 3em 1em;
+      padding: 7em 1em 3em 1em;
       background: linear-gradient(to left, #2ebf91, #8360c3);
       background: url(../../assets/gradient-bg.jpg) 50%;
     }
@@ -78,42 +25,6 @@ ion-header {
 
         .brand-logo {
           margin-top: 18px;
-        }
-      }
-
-      .recommendation {
-        margin: 5em 0 2em 0;
-
-        .body-copy {
-          position: relative;
-          padding-left: 2.5em;
-
-          pre {
-            position: absolute;
-            top: 1px;
-            left: -12px;
-            padding: 0;
-            margin: 0;
-            color: var(--ion-color-light-shade);
-            font-size: 5em;
-          }
-
-          .job-title {
-            h4 {
-              margin-bottom: 0.3em;
-            }
-
-            strong {
-              font-weight: 600;
-            }
-          }
-        }
-
-        .job-logos {
-          img {
-            max-width: 80%;
-            border: red solid;
-          }
         }
       }
 

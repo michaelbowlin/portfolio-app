@@ -4,21 +4,21 @@ import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: 'portfolio',
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'ux',
         children: [
           {
             path: '',
             loadChildren: () =>
-              import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+              import('../ux/ux.module').then(m => m.UxPageModule)
           }
         ]
       },
       {
-        path: 'tab2',
+        path: 'ui',
         children: [
           {
             path: '',
@@ -28,7 +28,7 @@ const routes: Routes = [
         ]
       },
       {
-        path: 'tab3',
+        path: 'mb',
         children: [
           {
             path: '',
@@ -39,16 +39,11 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/portfolio/ux',
         pathMatch: 'full'
       }
     ]
   }
-  // {
-  //   path: '',
-  //   redirectTo: '/tabs/tab1',
-  //   pathMatch: 'full'
-  // }
 ];
 
 @NgModule({

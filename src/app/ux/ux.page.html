@@ -1,0 +1,247 @@
+<ion-content>
+    <ion-grid class="L-wrapper">
+        <ion-col class="content">
+          <!-- ::::: UX HEADER ::::: -->
+          <ion-row>
+              <ion-col size="10" offset="1" class="header-block ion-text-center" href="ux">
+                <img src="../../assets/Mike-Bowlin-Branding-UX-Logo.svg" alt="Mike Bowlin UX Brand">
+                <h2 class="ion-text-center">UX Design and Engineering</h2>
+                <em>The Art Of Humanizing Technology</em>
+                <ion-row>
+                  <ion-col size="6" offset="3">
+                    <p>
+                      <span class="dropcap"><span class="first">E</span>m</span>pathetic, user-centered design principles
+                      guide my product engineering whether for Anthem BCBS's
+                      web applications or Arrow Electronics pattern libraries. Throughout my career I have mastered a
+                      multitude of design challenges that have helped to galvanize my UX/UI expertise.
+                    </p>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+
+          <!-- ::::: Splash Image ::::: -->
+          <ion-row>
+            <ion-col>
+              <img src="http://mikebowlin.com/wp-content/uploads/2019/09/slide1-1.jpg" alt="">
+            </ion-col>
+          </ion-row>
+    
+          <!-- ::::: Recommendation - Jason ::::: -->
+          <ion-row>
+            <ion-col size="10" offset="1">
+              <hr>
+              <ion-row>
+                <ion-col size="8" offset="2" class="recommendation">
+                  <ion-row>
+                    <ion-col size="3">
+                      <ion-row>
+                        <ion-col size="12" class="ion-text-center ion-no-padding">
+                          <img height="120px" width="auto"
+                            src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-29-at-5.43.29-AM.png"
+                            alt="Mike Bowlin - Recomendation from Jason Montalto">
+                        </ion-col>
+                        <ion-col size="12" class="job-title ion-text-center ion-no-padding">
+                          <h4>Jason Montalto</h4>
+                          <p class="ion-no-margin"><em>Principal Architect</em></p>
+                          <strong class="ion-no-margin">Anthem Blue Cross</strong>
+                        </ion-col>
+                      </ion-row>
+    
+    
+                    </ion-col>
+                    <ion-col class="body-copy">
+                      <pre>"</pre>
+                      <p>Mike is highly committed to ensuring that the quality of his work is turned up to 11. He is not
+                        afraid
+                        to dive in and get his hands dirty and is very reliable. Working exclusively on a remote team can be
+                        challenging, but Mike fit in right away. He integrated well with the back-end heavy team. Mike
+                        enjoyed
+                        performing his duties while also helping to educate other developers about cutting edge presentation
+                        layer techniques. He excelled at designing and inspiring our team to implement his meticulously
+                        thought
+                        through product visions.
+                      </p>
+                      <p></p>
+                      <p>Through Mike’s leadership, our team was able to standardize our approach to ux and hifi design,
+                        which
+                        resulted in a significantly more refined set of products. Mike led the effort of reimagining our
+                        entire
+                        software suite, creating the vision and path forward for the next generation of products.
+                      </p>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+              <hr>
+            </ion-col>
+          </ion-row>
+    
+          <!-- ::::: UX SAMPLE SLIDES ::::: -->
+          <ion-row>
+            <ion-col size="10" offset="1">
+              <!-- 
+                <button ion-button *ngIf="!disablePrevBtn">prev</button>
+                ---- 
+     <button ion-button *ngIf="!disableNextBtn" (ionSlideNextEnd)="slideNext()">Next</button> -->
+    
+              <ion-row>
+                <ion-col size="8" offset="2">
+                  <!-- <img src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-07-12-at-10.30.12-AM.png"
+                    alt=""> -->
+    
+                  <!-- Slides -->
+                  <ion-slides #slides pager="true" [options]="slideOpts">
+    
+                    <!-- Slide 1 -->
+                    <ion-slide>
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-item>
+                            <ion-label>
+                              The <em>Curion Go</em> product ::: <span><em>Mayo Clinic and Applied Pathways</em></span>
+                            </ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col size="12">
+                          <img
+                            src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-07-12-at-10.30.12-AM.png"
+                            alt="">
+                        </ion-col>
+                      </ion-row>
+                    </ion-slide>
+    
+                    <!-- Slide 2 -->
+                    <ion-slide>
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-item>
+                            <ion-label>
+                              The <em>Curion Authoring </em> product mindmap ::: <span><em>Applied Pathways</em></span>
+                            </ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col size="12">
+                          <img
+                            src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-09-25-at-2.38.40-PM-e1569756902126.png"
+                            alt="">
+                        </ion-col>
+                      </ion-row>
+                    </ion-slide>
+    
+    
+                    <!-- Slide 4 -->
+                    <ion-slide>
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-item>
+                            <ion-label>
+                              The <em>Ask Mayo Clinic</em> UX Prototype ::: <span><em>Mayo Clinic</em></span>
+                            </ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col size="12">
+                          <img
+                            src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-26-at-11.28.28-PM-e1570130724492.png"
+                            alt="">
+                        </ion-col>
+                      </ion-row>
+                    </ion-slide>
+    
+                    <!-- Slide 5 -->
+                    <ion-slide>
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-item>
+                            <ion-label>
+                              The <em>Clinical Decision Support</em> Product ::: <span><em>Mayo Clinic and Applied
+                                  Pathways</em></span>
+                            </ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col size="12">
+                          <img
+                            src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-07-12-at-10.44.24-AM.png"
+                            alt="">
+                        </ion-col>
+                      </ion-row>
+                    </ion-slide>
+    
+                    <!-- Slide 6 -->
+                    <ion-slide>
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-item>
+                            <ion-label>
+                              Sample Flowchart
+                            </ion-label>
+                          </ion-item>
+                        </ion-col>
+                        <ion-col size="12">
+                          <img
+                            src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-26-at-11.31.28-PM.png"
+                            alt="">
+                        </ion-col>
+                      </ion-row>
+                    </ion-slide>
+    
+                  </ion-slides>
+                </ion-col>
+              </ion-row>
+    
+            </ion-col>
+          </ion-row>
+    
+          <!-- ::::: Recommendation 2  ::::: -->
+          <ion-row>
+            <ion-col size="10" offset="1">
+              <hr>
+              <ion-row>
+                <ion-col size="8" offset="2" class="recommendation">
+                  <ion-row>
+                    <ion-col size="3">
+                      <ion-row>
+                        <ion-col size="12" class="ion-text-center ion-no-padding">
+                          <img height="120px" width="auto"
+                            src="http://mikebowlin.com/wp-content/uploads/2015/04/Screen-Shot-2019-09-29-at-3.38.59-AM.png"
+                            alt="Mike Bowlin - Recomendation from Kurt Lingel">
+                        </ion-col>
+                        <ion-col size="12" class="job-title ion-text-center ion-no-padding">
+                          <h4>Kurt Lingel</h4>
+                          <p class="ion-no-margin"><em>CTO</em></p>
+                          <strong class="ion-no-margin">Anthem Blue Cross</strong>
+                        </ion-col>
+                      </ion-row>
+    
+    
+                    </ion-col>
+                    <ion-col class="body-copy">
+                      <pre>"</pre>
+                      <p>Mike is an extremely talented UX/UI engineer. He truly focuses on understanding the user and the
+                        problems they need to solve, and then turns that research into visual designs and implementations
+                        that make the user experience more effective moving forward.
+                      </p>
+                      <p></p>
+                      <p>Mike is also always looking for more
+                        efficient tools for himself and the organization as a whole that allowed us to do rapid prototyping
+                        and agile implementations that incorporate a constant feedback loop. I energetically recommend Mike
+                        for your UX/UI team!</p>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+              <hr>
+            </ion-col>
+          </ion-row>
+    
+
+          <!-- ::::: Splash Image ::::: -->
+          <ion-row>
+              <ion-col>
+                <img src="http://mikebowlin.com/wp-content/uploads/2019/09/curion-responsive.jpg" alt="">
+              </ion-col>
+            </ion-row>
+            
+        </ion-col>
+      </ion-grid>
+</ion-content>

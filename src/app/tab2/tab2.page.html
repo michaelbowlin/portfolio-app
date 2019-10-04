@@ -1,9 +1,200 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content></ion-content>
+  <!-- ::::: UI HEADER ::::: -->
+  <ion-row>
+    <ion-col size="10" offset="1" class="header-block ion-text-center" href="ux">
+      <img src="../../assets/Mike-Bowlin-Branding-UI-Logo.svg" alt="Mike Bowlin UX Brand">
+      <h2 class="ion-text-center">Software Engineering</h2>
+      <em>knowing the code === a splendid UX</em>
+      <ion-row>
+
+        <ion-col size="6" offset="3">
+          <!-- <p><span class="dropcap"><span class="first">E</span>m</span>pathetic, user-centered design principles
+                      guide my product engineering whether for Anthem BCBS's
+                      web applications or Arrow Electronics pattern libraries. Throughout my career I have mastered a
+                      multitude of design challenges that have helped to galvanize my UX/UI expertise.
+                    </p> -->
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+  <!-- ::::: UI SAMPLE SLIDES ::::: -->
+  <ion-row>
+    <ion-col size="10" offset="1">
+      <ion-row>
+        <ion-col size="8" offset="2">
+          <!-- Slides -->
+          <ion-slides #slides (ionSlideWillChange)="doCheck()" pager="true" [options]="slideOpts">
+            <!-- Slide 1 -->
+            <ion-slide>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item>
+                    <ion-label>
+                      The <em>Curion Go </em> web/mobile application ::: <span><em>Mayo Clinic and Applied
+                          Pathways</em></span>
+                    </ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <img src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-07-12-at-9.50.20-AM.png"
+                    alt="">
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+            <!-- Slide 2 -->
+            <ion-slide>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item>
+                    <ion-label>
+                      The <em>Curion Authoring </em> product mindmap ::: <span><em>Applied Pathways</em></span>
+                    </ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <img
+                    src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-09-25-at-2.38.40-PM-e1569756902126.png"
+                    alt="">
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+
+            <!-- Slide 3 -->
+            <ion-slide>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item>
+                    <ion-label>
+                      The <em>Ask Mayo Clinic</em> UX Prototype ::: <span><em>Mayo Clinic</em></span>
+                    </ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <img
+                    src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-26-at-11.28.28-PM-e1570130724492.png"
+                    alt="">
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+            <!-- Slide 4 -->
+            <ion-slide>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item>
+                    <ion-label>
+                      The <em>Clinical Decision Support</em> Product ::: <span><em>Mayo Clinic and Applied
+                          Pathways</em></span>
+                    </ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <img src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2017-07-12-at-10.44.24-AM.png"
+                    alt="">
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+            <!-- Slide 5 -->
+            <ion-slide>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-item>
+                    <ion-label>
+                      Sample Flowchart
+                    </ion-label>
+                  </ion-item>
+                </ion-col>
+                <ion-col size="12">
+                  <img src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-26-at-11.31.28-PM.png"
+                    alt="">
+                </ion-col>
+              </ion-row>
+            </ion-slide>
+
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+
+    </ion-col>
+  </ion-row>
+
+  <!-- ::::: Image Grid ::::: -->
+  <ion-row>
+    <ion-col size="10" offset="1">
+      <ion-row>
+        <ion-col size="6" class="ion-padding">
+          <img src="http://mikebowlin.com/wp-content/uploads/2018/06/bg-arrow-ipads-1.jpg" alt="">
+        </ion-col>
+        <ion-col size="6" class="ion-padding">
+          <img src="http://mikebowlin.com/wp-content/uploads/2018/06/bg-arrow-iphone-1.jpg" alt="">
+        </ion-col>
+        <ion-col size="6" class="ion-padding">
+          <img src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-26-at-11.24.34-PM.png" alt="">
+        </ion-col>
+        <ion-col size="6" class="ion-padding">
+          <img src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-07-08-at-11.47.50-AM.png" alt="">
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+
+
+  <!-- ::::: Recommendation - Scott ::::: -->
+  <ion-row>
+    <ion-col size="10" offset="1">
+      <hr>
+      <ion-row>
+        <ion-col size="8" offset="2" class="recommendation">
+          <ion-row>
+            <ion-col size="3">
+              <ion-row>
+                <ion-col size="12" class="ion-text-center ion-no-padding">
+                  <img height="120px" width="auto"
+                    src="http://mikebowlin.com/wp-content/uploads/2019/09/Screen-Shot-2019-09-30-at-6.25.24-AM.png"
+                    alt="Mike Bowlin - Recomendation from Scott Swindell">
+                </ion-col>
+                <ion-col size="12" class="job-title ion-text-center ion-no-padding">
+                  <h4>Scott Swindell</h4>
+                  <p class="ion-no-margin"><em>Software Architect / .NET Developer</em></p>
+                  <strong class="ion-no-margin">Restaurant Solutions</strong>
+                </ion-col>
+              </ion-row>
+
+
+            </ion-col>
+            <ion-col class="body-copy">
+              <pre>"</pre>
+              <p>Mike's background with Angular and javascript made him well-suited to pick up this unique framework and
+                run with it. This project also showcased Mike's skills with CSS, wireframes, and high-fidelity mocks.
+                His wireframes and mocks were crucial in communicating the design of the website to the client.
+              </p>
+              <p></p>
+              <p>The second project utilized ASP.Net Core 1, a server-side MVC framework, as well as HTML 5. Mike
+                showed an amazing willingness to learn and adapt to this new environment, going so far as to switch IDEs
+                to match the rest of the team. He worked closely with the backend developers to implement the
+                application using modern design philosophies in order to provide a quality user experience.
+              </p>
+              <p>
+                Throughout the entire time, Mike was a core member of the team and an advocate for Agile
+                methodologies. He was a model for proper time management and provided very accurate estimates. He was a
+                willing participant in discussions, design sessions, and brainstorming, with solid communication skills.
+              </p>
+              <p>
+                Truly, though, Mike is part developer and part artist. His artistic design talent is phenomenal. He
+                is able to apply his background and eye for art into his designs for websites. The outcome is web
+                applications that not only perform, but do so beautifully and intuitively. Mike adapts the latest web
+                technologies to suit his artistic vision for a great user experience.
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <hr>
+    </ion-col>
+  </ion-row>
+</ion-content>
