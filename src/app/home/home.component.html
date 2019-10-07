@@ -6,21 +6,19 @@
           <ion-col size="10" offset="1" class="ion-no-padding">
             <ion-row justify-content-center align-items-stretch style="height: 100%">
               <!-- LOGO -->
-              <a routerLink="/">
-                <ion-col class="ion-text-start" size="5">
-                  <ion-row class="mb-logo">
-                    <ion-col size="10">
-                      <!-- Logo -->
-                      <img class="logo" src="../assets/Mike-Bowlin-UX-UI-Logo-Primary-Light.svg" alt="" width="auto"
-                        height="auto">
-                      <!-- Title -->
-                      <div class="job-title">Senior UX Designer & Software Engineer</div>
-                    </ion-col>
-                  </ion-row>
-                </ion-col>
-              </a>
+              <ion-col class="ion-text-start" size="7" routerLink="/">
+                <ion-row class="mb-logo">
+                  <ion-col size="10">
+                    <!-- Logo -->
+                    <img class="logo" src="../assets/Mike-Bowlin-UX-UI-Logo-Primary-Light.svg" alt="" width="auto"
+                      height="auto">
+                    <!-- Title -->
+                    <div class="job-title">Senior UX Designer & Software Engineer</div>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
               <!-- NAV -->
-              <ion-col size="5" offset="2" class="ion-no-padding">
+              <ion-col size="4" offset="1" class="ion-no-padding">
                 <ion-row justify-content-center align-items-stretch style="height: 100%">
                   <ion-col size="3" offset="2" class="ion-no-padding">
                     <ion-tab-button routerLink="/portfolio/ux" justify-content-center align-items-stretch
@@ -35,10 +33,11 @@
                     </ion-tab-button>
                   </ion-col>
                   <ion-col size="3">
-                    <ion-tab-button tab="mb" justify-content-center align-items-stretch style="height: 100%">
-                      <ion-icon name="send"></ion-icon>
-                      <!-- <ion-label>MB</ion-label> -->
-                    </ion-tab-button>
+                    <a [href]="'mailto:info@michaelbowlin.com'">
+                      <ion-tab-button justify-content-center align-items-stretch style="height: 100%">
+                        <ion-icon name="send"></ion-icon>
+                      </ion-tab-button>
+                    </a>
                   </ion-col>
                 </ion-row>
               </ion-col>
@@ -51,22 +50,75 @@
 
   <ion-grid class="L-wrapper">
     <!-- Infographic -->
-    <ion-row class="intro">
-      <ion-col size="10" offset="1">
+    <ion-row class="infographic">
+      <ion-col class="ion-hide-sm-down" size-lg="12" offset-lg="0" size-md="12" offset-md="0" size-xl="10"
+        offset-xl="1">
         <img src="../assets/Mike-Bowlin-UX-UI-Software-Engineer.svg"
           alt="Mike Bowlin UX UI Software Engineer - Infographic" width="100%" height="auto">
       </ion-col>
     </ion-row>
 
     <ion-col class="content">
+      <!-- ::::: MB HEADER ::::: -->
+      <ion-row>
+        <ion-col size="10" offset="1" class="header-block ion-text-center" href="ux">
+          <img src="../../assets/Mike-Bowlin-Branding-MB-Logo-Circle.svg" alt="Mike Bowlin UX Brand">
+          <h2 class="ion-text-center">Welcome</h2>
+          <em>I thrive on patterns in technology, design and
+            human behavior. </em>
+          <ion-row>
+            <ion-col size-md="6" offset-md="3" size-xs="10" offset-xs="1">
+              <p>
+                <span class="dropcap"><span class="first">A </span>s</span> a Senior UX Designer & Software Engineer
+                with 12+
+                years experience I excel in progressive,
+                mobile-first development. My professional experience makes me adept at navigating the full
+                life-cycle of enterprise applications with a specialty in UX Design and Software Engineering.
+              </p>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <!-- ::::: COMPANY LOGOS ::::: -->
+      <ion-row>
+        <ion-col size="10" offset="1">
+          <div class="spacer-1"></div>
+          <h2 class="ion-text-center">Work History</h2>
+          <!-- Job Logo Grid -->
+          <ion-row class="job-logos" class="ion-padding-top">
+            <ion-col size-xs="12" size-sm="10" offset-sm="1" size-md="8" offset-md="2">
+              <ion-row>
+                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-anthem.jpg"
+                    alt="Mike Bowlin - UX Designer and Software Engineer - Anthem Blue Cross"></ion-col>
+                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-applied-pathways.jpg"
+                    alt="Mike Bowlin - UX Designer and Software Engineer - Applied Pathways"></ion-col>
+                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-mayo-clinic-2.jpg"
+                    alt="Mike Bowlin - UX Designer and Software Engineer - Mayo Clinic"></ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-cricket-wireless.jpg"
+                    alt="Mike Bowlin - UX Designer and Software Engineer - Cricket Wireless"></ion-col>
+                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-arrow-electronics-1.jpg"
+                    alt="Mike Bowlin - UX Designer and Software Engineer - Arrow Electronics"></ion-col>
+                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-rsi.jpg"
+                    alt="Mike Bowlin - UX Designer and Software Engineer - RSI"></ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+
+      <div class="spacer-1"></div>
 
       <!-- ::::: Recommendation - Kurt  ::::: -->
       <ion-row>
-        <ion-col size="10" offset="1">
+        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="10" offset-lg="1" align-self-stretch> 
+          <hr>
           <ion-row>
-            <ion-col size="8" offset="2" class="recommendation">
+            <ion-col size-xs="12" size-md="10" offset-md="1" size-xl="8" offset-xl="2" class="recommendation">
               <ion-row>
-                <ion-col size="3">
+                <ion-col size-xs="12" size-sm="3">
                   <ion-row>
                     <ion-col size="12" class="ion-text-center ion-no-padding">
                       <img height="120px" width="auto"
@@ -100,144 +152,35 @@
         </ion-col>
       </ion-row>
 
-      <!-- ::::: COMPANY LOGOS ::::: -->
-      <ion-row>
-        <ion-col size="10" offset="1">
-          <!-- Job Logo Grid -->
-          <ion-row class="job-logos">
-            <ion-col size="8" offset="2">
-              <ion-row>
-                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-anthem.jpg"
-                    alt="Mike Bowlin - UX Designer and Software Engineer - Anthem Blue Cross"></ion-col>
-                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-applied-pathways.jpg"
-                    alt="Mike Bowlin - UX Designer and Software Engineer - Applied Pathways"></ion-col>
-                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-mayo-clinic-2.jpg"
-                    alt="Mike Bowlin - UX Designer and Software Engineer - Mayo Clinic"></ion-col>
-              </ion-row>
-              <ion-row>
-                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-cricket-wireless.jpg"
-                    alt="Mike Bowlin - UX Designer and Software Engineer - Cricket Wireless"></ion-col>
-                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-arrow-electronics-1.jpg"
-                    alt="Mike Bowlin - UX Designer and Software Engineer - Arrow Electronics"></ion-col>
-                <ion-col><img src="http://mikebowlin.com/wp-content/uploads/2018/06/logo-rsi.jpg"
-                    alt="Mike Bowlin - UX Designer and Software Engineer - RSI"></ion-col>
-              </ion-row>
-            </ion-col>
-          </ion-row>
+      <div class="spacer-1"></div>
+      <div class="spacer-1"></div>
+
+      <!-- ::::: FOOTER CONTACT ::::: -->
+      <ion-row class="footer-block">
+        <ion-col size="10" offset="1" class="ion-text-center" href="ux">
+          <h2 class="ion-text-center">Let's create extraordinary products together!</h2>
         </ion-col>
+        <ion-col class="ion-text-center">
+          <div class="spacer-1"></div>
+          <a href="mailto:info@michaelbowlin.com">
+            <ion-button class="button-gradient-primary" shape="round" size="large">
+              <span class="ion-padding-end">
+                <ion-icon name="send"></ion-icon>
+              </span>
+              <span class="ion-padding-end"> EMAIL </span>
+            </ion-button>
+          </a>
+        </ion-col>
+
       </ion-row>
+
+      <div class="spacer-1"></div>
+      <div class="spacer-1"></div>
 
       <!-- ::::: Splash Image ::::: -->
       <ion-row>
         <ion-col>
           <img src="http://mikebowlin.com/wp-content/uploads/2019/09/slide1-1.jpg" alt="">
-        </ion-col>
-      </ion-row>
-
-
-
-
-
-
-
-
-      
-      <!-- ::::: ABOUT HEADER ::::: -->
-      <ion-row>
-        <ion-col size="6" offset="3" class="header-block ion-text-center" href="ux">
-          <img src="../../assets/Mike-Bowlin-Branding-MB-Logo.svg" alt="Mike Bowlin UX Brand">
-          <h2>About Me</h2>
-          <em><span class="dropcap"><span class="first">T</span>w</span>elve years of UX Design and Engineering from
-            Startups to Enterprise.
-          </em>
-        </ion-col>
-      </ion-row>
-
-      <ion-col size="3">
-        <div>
-
-          <ion-row>
-            <ion-col size="3">
-              <img src="../../assets/Mike-Bowlin-UX-UI-Software-Engineer-Avatar.png"
-                alt="Mike Bowlin UX UI Software Engineer Avatar">
-            </ion-col>
-            <ion-col size="7">
-              <h3>Mike <span>Bowlin</span></h3>
-              <p>Senior UX Designer and Software Engineer</p>
-              <a href="mailto:info@michaelbowlin.com">info@michaelbowlin.com</a>
-            </ion-col>
-          </ion-row>
-        </div>
-      </ion-col>
-
-
-
-      <ion-row>
-        <ion-col size="6" offset="3">
-
-          <ion-col size="6" offset="3">
-
-          </ion-col>
-
-          <ion-card>
-            <ion-item>
-              <ion-label>12 years of UX from Startup to Enterprise.</ion-label>
-            </ion-item>
-
-            <ion-card-content>
-              <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-              <p></p>
-              <p></p>
-              <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah </p>
-
-            </ion-card-content>
-            <footer>
-
-              <ion-item>
-                <ion-label>Industries:</ion-label>
-              </ion-item>
-              <p></p>
-              <ion-chip outline>
-                <ion-label>Healthcare</ion-label>
-              </ion-chip>
-
-              <ion-chip outline>
-                <ion-label>Education</ion-label>
-              </ion-chip>
-
-              <ion-chip outline>
-                <ion-label>Telecommunications</ion-label>
-              </ion-chip>
-
-              <ion-chip outline>
-                <ion-label>Distribution</ion-label>
-              </ion-chip>
-
-              <ion-chip outline>
-                <ion-label>Startups</ion-label>
-              </ion-chip>
-
-
-            </footer>
-          </ion-card>
-
-        </ion-col>
-      </ion-row>
-
-
-
-      <ion-row>
-        <ion-col size="10" offset="1" class="header-block ion-text-center" href="ux">
-          <ion-row>
-            <ion-col size="6" offset="3">
-              <!-- Header -->
-              <h2 class="ion-text-center">UX Samples</h2>
-              <p><span class="dropcap"><span class="first">F</span>r</span>om discovery to UX prototyping and evaluation
-                my UX leadership has helped shape multiple
-                products in various industries.
-              </p>
-            </ion-col>
-          </ion-row>
         </ion-col>
       </ion-row>
     </ion-col>

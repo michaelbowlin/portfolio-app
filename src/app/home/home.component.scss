@@ -1,12 +1,42 @@
+// Home Header
+ion-header {
+  ion-tab-button {
+    color: var(--ion-color-light);
+    ion-label {
+      color: var(--ion-color-light);
+    }
+  }
+}
+
+ion-grid {
+  padding: 0;
+}
+
 .L {
   &-wrapper {
-    min-width: 1366px;
 
-    .intro {
-      padding: 7em 1em 3em 1em;
-      background: linear-gradient(to left, #2ebf91, #8360c3);
-      background: url(../../assets/gradient-bg.jpg) 50%;
+    ion-row {
+      &.infographic {
+        padding: 7em 1em 3em 1em;
+        background: linear-gradient(to left, #2ebf91, #8360c3);
+        background: url(../../assets/gradient-bg.jpg) 50%;
+      }
     }
+
+    @media only screen and (max-width: 1024px) {
+      ion-row {
+
+        &.infographic {
+          max-width: 1366px;
+          overflow-y: auto !important;
+
+          img {
+            // display: none
+          }
+        }
+      }
+    }
+
 
     h1 {
       color: var(--ion-color-light);
@@ -45,10 +75,21 @@
           }
         }
       }
+
+      .footer-block {
+        ion-button {
+          --background: none;
+          --background-hover: none;
+          background-color: #31c7b5;
+          background-image: linear-gradient(19deg, #31c7b5 0%, #3fbdb9 100%);
+          border-radius: 35px;
+
+          &:hover {
+            background-color: #3fbdb9;
+            background-image: linear-gradient(19deg, #3fbdb9 100%, #31c7b5 0% );
+          }
+        }
+      }
     }
   }
-}
-
-ion-grid {
-  padding: 0;
 }

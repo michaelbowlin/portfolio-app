@@ -5,19 +5,17 @@
         <ion-col size="10" offset="1" class="ion-no-padding">
           <ion-row justify-content-center align-items-stretch style="height: 100%">
             <!-- LOGO -->
-            <a routerLink="/">
-              <ion-col class="ion-text-start" size="5">
-                <ion-row class="mb-logo">
-                  <ion-col size="10">
-                    <!-- Logo -->
-                    <img class="logo" src="../assets/Mike-Bowlin-UX-UI-Logo-Primary.svg" alt="" width="auto"
-                      height="auto">
-                  </ion-col>
-                </ion-row>
-              </ion-col>
-            </a>
+            <ion-col class="ion-text-start" size="5" routerLink="/">
+              <ion-row class="mb-logo">
+                <ion-col size="10">
+                  <!-- Logo -->
+                  <img class="logo" src="../assets/Mike-Bowlin-UX-UI-Logo-Primary.svg" alt="" width="auto"
+                    height="auto">
+                </ion-col>
+              </ion-row>
+            </ion-col>
             <!-- NAV -->
-            <ion-col size="5" offset="2" class="ion-no-padding">
+            <ion-col size="4" offset="3" class="ion-no-padding">
               <ion-row justify-content-center align-items-stretch style="height: 100%">
                 <ion-col size="3" offset="2" class="ion-no-padding">
                   <ion-tab-button tab="ux" justify-content-center align-items-stretch style="height: 100%">
@@ -30,11 +28,12 @@
                   </ion-tab-button>
                 </ion-col>
                 <ion-col size="3">
-                  <ion-tab-button tab="mb" justify-content-center align-items-stretch style="height: 100%">
-                    <ion-icon name="send"></ion-icon>
-                    <!-- <ion-label>MB</ion-label> -->
-                  </ion-tab-button>
-                </ion-col>
+                    <a [href]="'mailto:info@michaelbowlin.com'">
+                      <ion-tab-button justify-content-center align-items-stretch style="height: 100%">
+                        <ion-icon name="send"></ion-icon>
+                      </ion-tab-button>
+                    </a>
+                  </ion-col>
               </ion-row>
             </ion-col>
           </ion-row>

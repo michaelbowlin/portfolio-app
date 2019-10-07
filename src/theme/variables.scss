@@ -1,6 +1,19 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
-
+:root {
+  --grid-breakpoint-xs: 0;
+  --grid-breakpoint-sm: 1000px;
+  --grid-breakpoint-md: 2000px;
+  --grid-breakpoint-lg: 3000px;
+  --grid-breakpoint-xl: 1200px;
+}
+$grid-breakpoints: (
+xs: 0,
+sm: 400px,
+md: 1000px,
+lg: 2000px,
+xl: 3000px
+);
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -75,129 +88,96 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  // TODO: Move Me!
-  body {
-    margin: 0;
-    padding: 0;
+  //====================
+  //  (TBD) GRID BREAKPOINTS
+  //====================
 
-    p {
-      line-height: 1.5em;
-    }
+  --ion-grid-width-xs: 100%;
+  --ion-grid-width-sm:              1024px;
+  --ion-grid-width-md:              1366px;
+  --ion-grid-width-lg:              1500px;
+  --ion-grid-width-xl:              2200px;
 
-    ion-card {
-      border-radius: 2em;
-      padding: 1em;
-    }
+  //====================
+  //  (GV-IONIC) APPLICATION COLORS
+  //====================
+  //--ion-background-color	              Background color of entire app
+  //--ion-background-color-rgb	          Background color of entire app, rgb format
+  //--ion-text-color	                    Text color of entire app
+  //--ion-text-color-rgb	                Text color of entire app, rgb format
+  //--ion-backdrop-color	                Color of the Backdrop component
+  //--ion-overlay-background-color	      Background color of the overlays
+  //--ion-border-color	                  Border color
+  //--ion-box-shadow-color	              Box shadow color
+  //--ion-tab-bar-background	            Background of the Tab bar
+  //--ion-tab-bar-background-focused	    Background of the focused Tab bar
+  //--ion-tab-bar-border-color	          Border color of the Tab bar
+  //--ion-tab-bar-color	                  Color of the Tab bar
+  //--ion-tab-bar-color-activated	        Color of the activated Tab
+  //--ion-toolbar-background	            Background of the Toolbar
+  //--ion-toolbar-border-color	          Border color of the Toolbar
+  //--ion-toolbar-color	                  Color of the components in the Toolbar
+  //--ion-toolbar-color-activated	        Color of the activated components in the Toolbar
+  //--ion-toolbar-color-unchecked	        Color of the unchecked components in the Toolbar
+  //--ion-toolbar-color-checked	          Color of the checked components in the Toolbar
+  //--ion-item-background	                Background of the Item
+  //--ion-item-background-activated	      Background of the activated Item
+  //--ion-item-border-color	              Border color of the Item
+  //--ion-item-color	                    Color of the components in the Item
+  //--ion-placeholder-color	              Color of the placeholder in inputs
 
-    hr {
-      margin-top: 5em;
-      background: var(--ion-color-medium-tint);
-    }
+  //====================
+  //  (GV-IONIC) APPLICATION VARIABLES
+  //====================
+  //--ion-font-family	          Font family of the app
+  //--ion-statusbar-padding	    Statusbar padding top of the app
+  //--ion-safe-area-top	        Adjust the safe area inset top of the app
+  //--ion-safe-area-right	      Adjust the safe area inset right of the app
+  //--ion-safe-area-bottom	    Adjust the safe area inset bottom of the app
+  //--ion-safe-area-left	      Adjust the safe area inset left of the app
+  //--ion-margin	              Adjust the margin of the Margin attributes
+  //--ion-padding	              Adjust the padding of the Padding attributes
 
-    .dropcap {
-      position: relative;
-      .first {
-        position: absolute;
-        left: -0.65em;
-        top: -0.07em;
-        font-size: 1.22em;
-        line-height: 1em;
-      }
-    }
+  //====================
+  //  (GV-IONIC) GRID VARIABLES
+  //====================
+  //--ion-grid-columns	          Number of columns in the grid
+  //--ion-grid-padding-xs	        Padding of the grid for xs breakpoints
+  //--ion-grid-padding-sm	        Padding of the grid for sm breakpoints
+  //--ion-grid-padding-md	        Padding of the grid for md breakpoints
+  //--ion-grid-padding-lg	        Padding of the grid for lg breakpoints
+  //--ion-grid-padding-xl	        Padding of the grid for xl breakpoints
+  //--ion-grid-column-padding-xs	Padding of the grid columns for xs breakpoints
+  //--ion-grid-column-padding-sm	Padding of the grid columns for sm breakpoints
+  //--ion-grid-column-padding-md	Padding of the grid columns for md breakpoints
+  //--ion-grid-column-padding-lg	Padding of the grid columns for lg breakpoints
+  //--ion-grid-column-padding-xl	Padding of the grid columns for xl breakpoints
 
-    ion-header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      overflow: hidden;
-      min-width: 1366px;
-    
-      @media only screen and (min-width: 1366px) {
-      }
-    }
-       
-    
-    .recommendation {
-      margin: 5em 0 2em 0;
+  //====================
+  //  IOS SPECIFIC
+  //====================
+  //.ios {
+  //
+  //}
 
-      .body-copy {
-        position: relative;
-        padding-left: 2.5em;
+  //====================
+  //  MATERIAL DESIGN SPECIFIC
+  //====================
+  //.md {
+  //
+  //}
+}
 
-        pre {
-          position: absolute;
-          top: 1px;
-          left: -12px;
-          padding: 0;
-          margin: 0;
-          color: var(--ion-color-light-shade);
-          font-size: 5em;
-        }
-
-        .job-title {
-          h4 {
-            margin-bottom: 0.3em;
-          }
-
-          strong {
-            font-weight: 600;
-          }
-        }
-      }
-
-      .job-logos {
-        img {
-          max-width: 80%;
-        }
-      }
-    }
-    
-    .mb-logo {
-      margin: 0 0 0 0;
-  
-      img {
-        &.logo {
-          margin-top: 0.3em;
-        }
-      }
-  
-      h2 {
-        margin: 0.2em 0 0 0;
-        font-size: 2.1em;
-        font-weight: 600;
-        letter-spacing: 0.05em;
-  
-        span {
-          color: var(--ion-color-light-shade);
-        }
-      }
-    }
-  
-    ion-tab-bar {
-      --background: none;
-      --border: none;
-      --color: none;
-      padding: 0;
-      height: 6em;
-  
-      ion-grid {
-        height: 6em;
-      }
-
-      ion-label {
-        font-size: 1.6em;
-        font-weight: 700;
-        color: var(--ion-color-medium-shade);
-      }
-  
-      ion-icon {
-        font-size: 18px;
-      }
-  
-      .job-title {
-        padding: 0 0 0 3.65em;
-        color: var(--ion-color-light);
-      }
-    }
+//====================
+//  (TBD) BUG PATCHES
+//====================
+// Missing iOS icons after setting a global toolbar style
+// Ionic doesn't use the toolbar CSS variables correctly behind the scenes
+ion-toolbar {
+  ion-button,
+  ion-back-button,
+  ion-menu-button,
+  .sc-ion-back-button-ios-h {
+    --color: white;
   }
 }
