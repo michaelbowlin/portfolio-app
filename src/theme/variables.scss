@@ -1,19 +1,6 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
-:root {
-  --grid-breakpoint-xs: 0;
-  --grid-breakpoint-sm: 1000px;
-  --grid-breakpoint-md: 2000px;
-  --grid-breakpoint-lg: 3000px;
-  --grid-breakpoint-xl: 1200px;
-}
-$grid-breakpoints: (
-xs: 0,
-sm: 400px,
-md: 1000px,
-lg: 2000px,
-xl: 3000px
-);
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -92,11 +79,12 @@ xl: 3000px
   //  (TBD) GRID BREAKPOINTS
   //====================
 
-  --ion-grid-width-xs: 100%;
-  --ion-grid-width-sm:              1024px;
-  --ion-grid-width-md:              1366px;
-  --ion-grid-width-lg:              1500px;
-  --ion-grid-width-xl:              2200px;
+  // --ion-grid-width-xs: 100%;
+  // --ion-grid-width-sm:              540px;
+  // --ion-grid-width-md:              720px;
+  // --ion-grid-width-lg:              1366px;
+  // --ion-grid-width-xl:              1140px;
+
 
   //====================
   //  (GV-IONIC) APPLICATION COLORS
