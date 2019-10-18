@@ -24,7 +24,8 @@ import { TabsPageModule } from './tabs/tabs.module';
     TabsPageModule,
     BrowserModule, 
     IonicModule.forRoot(), 
-    AppRoutingModule, HomeRoutingModule
+    AppRoutingModule, 
+    HomeRoutingModule
   ],
   providers: [
     StatusBar,

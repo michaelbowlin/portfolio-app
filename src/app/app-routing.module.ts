@@ -4,7 +4,8 @@ import { TabsPage } from './tabs/tabs.page';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'portfolio/ux', loadChildren: './tabs/tabs.module#TabsPageModule'}
+  { path: 'portfolio/ux', loadChildren: './tabs/tabs.module#TabsPageModule'},
+  // { path: 'portfolio/case-study', loadChildren: './tabs/tabs.module#TabsPageModule'},
 
   // { path: 'portfolio', loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)}
 ];

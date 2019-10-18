@@ -1,5 +1,5 @@
 // Home Header
-ion-header {  
+ion-header {
   ion-tab-button {
     color: var(--ion-color-medium-shade);
     ion-label {
@@ -17,11 +17,11 @@ ion-grid {
     ion-row {
       &.infographic {
         min-height: 11.5em;
-        padding: 7em 1em 3em 1em;
+        padding: 1em 1em 3em 1em;
         // 1
-        // background: #2ebf91;  /* fallback for old browsers */
+        // backgroud: #2ebf91;  /* fallback for old browsers */
         // background: -webkit-linear-gradient(to right, #7A70BB, #2ebf91);  /* Chrome 10-25, Safari 5.1-6 */
-        // background: linear-gradient(to right, #7A70BB, #2ebf91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+        // background: linear-gradient(to right, #7A70BB, #2ebf91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       }
     }
 
@@ -91,8 +91,109 @@ ion-grid {
         }
       }
     }
-
   }
 }
 
+// CHANGE BELOW
 
+.lb {
+  &-leaf {
+    ion-col {
+      margin-top: 6em;
+      ion-row {
+        ion-col {
+          position: relative;
+          overflow: hidden;
+          height: 6em;
+          border-radius: 0.7em;
+          box-shadow: 0 15px 31px 0 rgba(0, 7, 92, 0.38);
+
+          p {
+            position: absolute;
+            bottom: -2px;
+            right: -4px;
+            margin: 0;
+            font-size: 1.2em;
+            color: #fff;
+            font-weight: 900;
+            line-height: 5em;
+            width: 60%;
+            overflow: visible;
+          }
+
+          &:nth-child(4) {
+            background-image: linear-gradient(-35deg, #b31919 3%, #fb8332 94%);
+            img {
+              position: absolute;
+              left: 21px;
+              top: -20px;
+              width: 8em;
+            }
+          }
+
+          &:nth-child(2) {
+            background-image: linear-gradient(-35deg, #9119b3 0%, #e64c4c 88%);
+            img {
+              position: absolute;
+              left: 14px;
+              top: -16px;
+              width: 7.8em;
+            }
+          }
+
+          &:nth-child(5) {
+            // height:14rem;
+            background-image: linear-gradient(-35deg, #4e2bcc 3%, #b620e0 100%);
+            img {
+              position: absolute;
+              left: -17px;
+              top: 12px;
+              width: 8em;
+            }
+          }
+
+          &:nth-child(1) {
+            display: none;
+            //background-image: linear-gradient(-35deg, #289dcc 3%, #815eff 94%);
+          }
+
+          &:nth-child(6) {
+            display: none;
+            //background-image: linear-gradient(-35deg, #36ac91 3%, #5ad0ff 94%);
+          }
+
+          &:nth-child(3) {
+            background-image: linear-gradient(-35deg, #57a900 3%, #69dfc4 94%);
+            img {
+              position: absolute;
+              left: 0px;
+              top: -20px;
+            }
+          }
+        }
+      }
+    }
+
+    ion-col {
+      &.block-full {
+        height: 40em;
+        margin: 5em 0;
+        background: #540bc8;
+      }
+    }
+  }
+}
+
+.slogan {
+  i {
+    width: 100%;
+    padding: 1.8em 0 0 0;
+    color: #c03579;
+  }
+}
+
+.mb-nav {
+  h2 {
+    width: 100%;
+  }
+}
